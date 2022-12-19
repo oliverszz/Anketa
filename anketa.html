@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTV Atsauksme</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            background-color: rgb(0, 0, 0);
+        }
+        button {
+            border: none    ;
+            background-color: #ffffff;
+        }
+        button:focus{
+            background-color: rgb(255, 0, 212);
+            border-radius: 15%;
+            border: 3px solid rgba(0, 0, 0, 0);
+        }
+        button:hover{
+            border: 3px solid rgb(255, 0, 212);
+            border-radius: 15%;
+        }
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            min-height: 10vh;
+            gap: 1rem;
+            /* background-color: (255, 255, 255); */
+            padding: 20px;
+            }
+            h1{
+                size: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                min-height: 5vh;
+                gap: 1rem;
+                color: rgb(255, 0, 212);
+            }
+            img{
+                mix-blend-mode: multiply;
+                filter: contrast(1);
+            }
+            .box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box select {
+  background-color: rgb(255, 0, 212);
+  color: white;
+  padding: 12px;
+  width: 250px;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+.box::before {
+  content: "\f13a";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 45px;
+  pointer-events: none;
+}
+.box select option {
+  padding: 30px;
+}
+    </style>
+</head>
+
+<body>
+    <h1>Aptauja!</h1>
+<div class="box">
+    <select id="Skolotaji">
+        <option value="">Ēvalds</option>
+        <option value="">Anrijs</option>
+        <option value="">Apīne</option>
+    </select>
+
+<button id="1" type="submit">
+    <img src="/Smiles/smile1 (2).png">
+</button>
+<button id="2" type="submit">
+    <img src="/Smiles/smile2.png">
+</button>    
+<button id="3" type="submit">
+    <img src="/Smiles/smile3.png">
+</button>
+<button id="4" type="submit">
+    <img src="/Smiles/smile4.png">
+</button>
+<button id="5" type="submit">
+    <img src="/Smiles/smile5.png">
+</button>
+</div>
+
+</body>
+
+
+</html>
